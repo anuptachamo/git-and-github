@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>branch example</title>
+</head>
+<body>
+    <h1>branch  example</h1>
+</body>
+</html>
+
+<!-- 
+    /**
+ *  ? 3. how to check in which branch you are: (STEP1)
+        - git branch
+        - git branch -M main [to rename branch]
+ */
+
+/**
+ *  ? 4. how to add new branch and delete (STEP 2)
+        - git checkout <- branch name->    (to navigate)
+        - git checkout -b <- new branch name-> (to create new branch)
+        - git branch -d <- branch name->   (to delete branch)
+
+        for example i am creating a new branch name called feature1
+        you needed to follow these steps:
+            - git checkout -b feature1 (new branch will be created)
+            - git branch (to check in which branch you are)
+            - git checkout main (this will change to main branch)
+            - git push origin feature1 (this will push the code to the feature1 branch )
+ */
+ -->
+
+
+
+ <!--? NOTE (STEP 3)  
+        While creating new branch we cannot directly push the code in the new branch,
+        before pushing code you needed to write some new command code,
+            
+            step 1: while you writing a command git push, you will get (The current branch name has no upstream branch)
+            step 2: After that you needed to write command code, git push --set-upstream origin (branch name),
+            step 3: after running that command you can easily push new branch code
+        -->
+
+<!-- ?Compare and pull request (step 4) 
+        - After step 3 completed, go to your github account and open this repo and you will see compare and pull request green color button, click on it.
+        - After that, if you want give description then click create pull request
+        - After that, Click merge pull request.
+        - after that, click confirm merge
+        - After that, now will see new branch code successfully merge in main branch-->
